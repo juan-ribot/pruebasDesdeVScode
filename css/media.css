@@ -1,0 +1,124 @@
+/* ----------------------------------- */
+/* ESTILOS GENERALES (Diseño Elástico) */
+/* ----------------------------------- */
+
+
+
+
+/* ---------- MEDIA QUERIS ---------- */
+/* -------------------- */
+/* SMARTPHONE (Vertical)*/
+/* -------------------- */
+@media only screen
+and (min-width:300px) and (max-width: 450px)
+and (orientation: portrait)
+{
+
+    .barraNav__nav--icono::before{
+        content: "";
+        background: url(/nav.svg) no-repeat;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+    }
+    
+    .imagen a::before{
+        content:  url(/img/imagenMovil1X.png);
+    }
+
+}
+
+@media only screen
+and (min-device-width:320px)
+and (orientation: portrait)
+{
+
+
+}
+/* -------------------- */
+/* TABLET = iPad */
+/* -------------------- */
+
+/* ---------- VERTICAL ---------- */
+@media only screen
+and (min-device-width:768px)
+and (orientation: portrait)
+{
+
+
+
+}
+/* ---------- HORIZONTAL ---------- */
+@media only screen
+and (min-device-width:1024px)
+and (orientation: landscape)
+{
+
+
+
+}
+/* -------------------- */
+/* ESCRITORIO */
+/* -------------------- */
+@media only screen
+and (min-width:1366px)
+{
+
+    .barraNav{
+        height: 50px;
+        justify-content: space-between;
+        padding: 0.5rem 4rem;
+        align-items: center;
+    }
+
+    .barraNav__logo{
+        flex-grow: 0;
+        display: flex;
+        flex-direction: column;
+        position: sticky;
+    }
+
+    .barraNav__logo__isotipo{
+        margin-top: 130px;
+    }
+    .barraNav__logo__logotipo::before{
+        content: "Marca";
+        font-size: 3.5rem;
+        display: block;
+        transform: rotate(90deg) translateX(50px);
+    }
+
+    .barraNav__nav{
+        display: flex;
+        flex-grow: 0.5;
+        justify-content: space-between;
+    }
+   
+/* SEO no deben tener importancia */
+/* Cree segun los media Q */
+    .barraNav__nav--galeria a::before{
+        content: "Galeria";
+    }
+    .barraNav__nav--trabajos a::before{
+        content: "Trabajos";
+    }
+    .barraNav__nav--contactar a::before{
+        content: "Contactar";
+    }
+    .imagen a::before{
+       content:  url(/img/gabriel-garcia-marengo-DWTNVZ631rs-unsplash.png);
+    }
+    .parrafo {
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .parrafo p{
+        padding: 3em;
+        
+    }
+
+
+}
+
